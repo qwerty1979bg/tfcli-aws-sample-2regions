@@ -1,5 +1,5 @@
 provider "aws" {
-  region  = "eu-central-1"
+  region = "eu-central-1"
 }
 
 provider "aws" {
@@ -15,9 +15,6 @@ resource "aws_security_group" "yolo-frankfurt" {
 resource "aws_security_group" "kcco-london" {
   name        = "kcco"
   description = "Sample security group that keeps calm and carries on"
-provider = aws.eu-west-2
 
+  provider = aws.eu-west-2
 }
-
-
-
